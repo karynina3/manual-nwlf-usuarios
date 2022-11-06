@@ -4,12 +4,12 @@
     :width: 50
 
 .. |botones_desplegables| image:: _static/imgs/nwlf/botones_desplegables.png
-    :width: 60
+    :width: 100
 
 MANUAL DE USUARIOS DE LA APLICACIÓN NATIONAL WATER LEVEL FORECAST
 ############################################################
 
-Este website contiene una guía para el manejo de la aplicación National Water Level Forecast, alojada en la  plataforma
+Este website contiene una guía para el manejo de la aplicación National Water Level Forecast |logo1|, alojada en la  plataforma
 tethys de INAMHI.
 Tethys fue probada mediante la implementación de portales web para socios de la iniciativa de sostenibilidad del agua del
 Grupo de Observaciones de la Tierra (GEO) y de la Universidad Brigham Young University (BYU).
@@ -17,8 +17,6 @@ En Ecuador, la implementación y personalización de la aplicación ha sido posi
 INAMHI, Fundación EcoCiencia y el Centro Internacional de Agricultura Tropical (CIAT), mediante el programa SERVIR-Amazonia.
 
 
-La aplicación National Water Level Forecast |logo1| permite visualizar pronósticos de nivel solo donde existen datos
-históricos usando corrección de sesgo.
 
 
 NATIONAL WATER LEVEL FORECAST (NWLF)
