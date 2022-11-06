@@ -3,7 +3,6 @@
 .. |logo1| image:: _static/imgs/Tethys/nwlf.png
     :width: 50
 
-
 MANUAL DE USUARIOS DE LA APLICACIÓN NATIONAL WATER LEVEL FORECAST
 ############################################################
 
@@ -15,9 +14,9 @@ En Ecuador, la implementación y personalización de la aplicación ha sido posi
 INAMHI, Fundación EcoCiencia y el Centro Internacional de Agricultura Tropical (CIAT), mediante el programa SERVIR-Amazonia.
 
 
+La aplicación National Water Level Forecast |logo1| permite visualizar pronósticos de nivel solo donde existen datos
+históricos usando corrección de sesgo.
 
-La aplicación El National Water Level Forecast |logo1| permite visualizar pronósticos de nivel solo donde existen datos históricos usando
-corrección de sesgo.
 
 
 .. note:: **Páginas de Interés**
@@ -32,16 +31,15 @@ corrección de sesgo.
 
             Video de Brigham Young University-GEOGloWS: `Video BYU <https://youtu.be/PLG8U8AQmXY>`_
 
+
+
 .. toctree::
    :maxdepth: 6
    :caption: Contents:
 
-   content/AplicacionesHidrologicas
-    content/hydroviewer
-   content/historical-validation
-   content/national-water-level
-   content/water-data-explorer
-   content/met-data-explorer
+   content/Aplicacion-National-Water-Level-Forecast
+   content/Com
+
 
 .. _link-to-geoglows-model-page
 
