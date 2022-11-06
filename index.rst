@@ -166,15 +166,6 @@ interés:
 .. image:: _static/imgs/nwlf/pronostico_calendario.png
 
 
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents:
-
-   content/Aplicacion-National-Water-Level-Forecast
-
-
-
 .. note:: **Páginas de Interés**
 
             Página de INAMHI: `INAMHI <https://www.inamhi.gob.ec/>`_
