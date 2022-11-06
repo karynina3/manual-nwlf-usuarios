@@ -38,7 +38,7 @@ A la izquierda de la pantalla se muestra un panel |botones_desplegables| con alg
 
 **Provincias**
 
-.. image:: _static/imgs/nwlf/mapa_provincias.png
+.. image:: _static/imgs/nwlf/mapa_Provincias.png
 
 A manera de ejemplo, puede hacer clic en el botón **Zoom a la Provincia** y seleccionar Ecuador:
 
@@ -94,7 +94,6 @@ La ventana emergente, mostrarán 4 pestañas diferentes: hidrograma, análisis v
 
 Hidrograma
 ================
-.. image:: _static/imgs/historical-validation/hvt.png
 
 La pestaña muestra el hidrograma con los valores observados de nivel,y la simulación histórica corregida.
 Este gráfico muestra la mejora entre el hidrograma de datos observados (azul) y el hidrograma de datos con
