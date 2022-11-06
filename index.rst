@@ -25,8 +25,7 @@ NATIONAL WATER LEVEL FORECAST (NWLF)
 ######################################
 
 .. note:: **Información General**
-             El National Water Level Foercast permite visualizar pronósticos de nivel solo donde existen datos históricos
-            usando corrección de sesgo.
+             El National Water Level Foercast permite visualizar pronósticos de nivel solo donde existen datos histórico usando corrección de sesgo.
 
                        .. image:: _static/imgs/nwlf/initialviwenwlf.png
 
