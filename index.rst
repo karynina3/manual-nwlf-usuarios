@@ -3,6 +3,9 @@
 .. |logo1| image:: _static/imgs/Tethys/nwlf.png
     :width: 50
 
+.. |botones_desplegables| image:: _static/imgs/nwlf/botones_desplegables.png
+    :width: 30
+
 MANUAL DE USUARIOS DE LA APLICACIÓN NATIONAL WATER LEVEL FORECAST
 ############################################################
 
@@ -22,68 +25,149 @@ NATIONAL WATER LEVEL FORECAST (NWLF)
 ######################################
 
 .. note:: **Información General**
-    Esta aplicación usa los datos observados de caudal históricos de las estaciones monitoreadas por INAMHI para ajustar
-    los Servicios de GEOGloWS ECMWF Streamflow Prediction para las estaciones hidrológicas en Ecuador.
+             El National Water Level Foercast permite visualizar pronósticos de nivel solo donde existen datos históricos
+            usando corrección de sesgo.
 
                        .. image:: _static/imgs/nwlf/initialviwenwlf.png
 
-**En esta aplicación se puede visualizar pronóstico de caudal con un horizonte de 15 días y adicional se muestra la
+
+**En esta aplicación se puede visualizar pronóstico de nivel con un horizonte de 15 días y adicional se muestra la
 corrección de sesgo.**
 
-La corrección de sesgo usada se basa en curvas de duración de caudales mensuales descrito por Sanchez- Lozano (`<https://doi.org/10.3390/hydrology8020071>`_).
-
 Para cada estación, el usuario puede ver series de tiempo y calcular métricas de error. La interfaz de usuario muestra
-la delimitación de los ríos en azul y de las estaciones con mediciones de caudales identificados con puntos en rojo.
+la delimitación de los ríos en azul y de las estaciones con mediciones de nivel observadas y corregidas por le método
+de corrección de sesgo identificados con puntos en rojo.
 
-.. image:: _static/imgs/historical-validation/hvt.png
+A la izquierda de la pantalla se muestra un panel |botones_desplegables| con algunas opciones de visualización:
 
-A manera de ejemplo, seleccione una estación al hacer clic. Para este ejemplo, haga zoom en la Estación Napo en Nuevo
-Rocafuerte (Station Code: H1136, estación COMID (ID de río): 9026410).
+**Provincias**
 
+.. image:: _static/imgs/nwlf/mapa_provincias.png
 
-Al hacer clic en la estación, aparecerá una ventana emergente con los datos de la misma. La ventana emergente, mostrarán
-4 pestañas diferentes: hidrograma, análisis visual, reporte de métricas y pronóstico.
+A manera de ejemplo, puede hacer clic en el botón **Zoom a la Provincia** y seleccionar Ecuador:
 
+.. image:: _static/imgs/nwlf/mapa_Ecuador.png
+
+Pero, también puede hacer búsqueda por la provincia de interés en este caso la Provincia de Morona Santiago:
+
+.. image:: _static/imgs/nwlf/zoom_provincia.png
+
+Como se observa en la imagen, se pueden observar con puntos rojos todas las estaciones localizadas en la Provincia de
+Morona Santiago.
+
+**Demarcaciones hidrológicas**
+
+.. image:: _static/imgs/nwlf/mapa_demarcaciones.png
+
+Como ejemplo, selecciones la demarcación Esmeraldas:
+
+.. image:: _static/imgs/nwlf/demarcacion_Esmeraldas.png
+
+Como se observa en la imagen, se pueden observar con puntos rojos todas las estaciones localizadas en la demarcación
+Esmeraldas.
+
+**Unidades hidrográficas Nivel 3**
+
+.. image:: _static/imgs/nwlf/UH_3.png
+
+Por ejemplo, selecciones la unidad hidrográfica de la Cuenca del Río Carchi:
+
+.. image:: _static/imgs/nwlf/cuenca_rio_carchi.png
+
+Como se observa en la imagen, se pueden observar con puntos rojos todas las estaciones localizadas en la Cuenca del Río
+Carchi.
+
+También en el botón desplegable, en la opción *Búsqueda por estación* localizado a la izquierda de la pantalla
+puede realizar la búsqueda por estación, comid (identificación del río por código), y río.
+En el siguiente ejemplo, ingresaremos al botón el nombre *río Zamora* y se marcarán en círculos negros todas las estaciones
+localizadas a lo largo del río:
+
+.. image:: _static/imgs/nwlf/rio_zamora.png
+
+La búsqueda de estación se puede realizar por el código de la misma o nombre de la estación:
+
+.. image:: _static/imgs/nwlf/H0890.png
+
+Una vez identificada la estación de interés al hacer clic en la misma, aparecerá una ventana emergente con los datos de
+la misma.
+
+.. image:: _static/imgs/nwlf/info_station.png
+
+La ventana emergente, mostrarán 4 pestañas diferentes: hidrograma, análisis visual, reporte de métricas y pronóstico.
 
 
 Hidrograma
 ================
 .. image:: _static/imgs/historical-validation/hvt.png
 
-La pestaña muestra el hidrograma con los valores observados de caudal, la simulación histórica y la simulación histórica
-corregida. Este gráfico muestra la mejora entre el hidrograma de datos históricos simulados (rojo) y el hidrograma de
-datos con corrección de sesgo (verde). El usuario puede activar y desactivar cada una de las opciones del hidrograma.
+La pestaña muestra el hidrograma con los valores observados de nivel,y la simulación histórica corregida.
+Este gráfico muestra la mejora entre el hidrograma de datos observados (azul) y el hidrograma de datos con
+corrección de sesgo (verde).
+
+.. image:: _static/imgs/nwlf/compare.png
+
+El usuario puede activar y desactivar cada una de las opciones del hidrograma.
+
+*Desactivando la capa de datos corregidos, observará los datos observados:
+
+.. image:: _static/imgs/nwlf/hydrograph_observed.png
+
+*Desactivando la capa de datos observadoros, visualizará los datos corregidos:
+
+.. image:: _static/imgs/nwlf/hydrograph_corrected.png
+
 
 Análisis visual
 =====================
 
-La segunda pestaña en la ventana emergente es el análisis visual: promedio diario, promedio mensual, diagrama de
-dispersión, diagrama de dispersión usando escala logarítmica, diagrama de análisis de volumen (simulación histórica de
-40 años combinada con el volumen total que pasó por la estación, el cual fue calculado utilizando el caudal diario) y
-tabla de análisis de volumen un determinado lugar.
+La segunda pestaña en la ventana emergente es el análisis visual:
+**Promedio diario**
+
+.. image:: _static/imgs/nwlf/daily_average.png
+
+**Promedio mensual**
+
+.. image:: _static/imgs/nwlf/monthly_average.png
+
+**Diagrama de dispersión**
+
+.. image:: _static/imgs/nwlf/scatter_plot.png
+
+**Diagrama de dispersión usando escala logarítmica**
+
+.. image:: _static/imgs/nwlf/scatter_plot_log.png
+
+*De igual manera que los gráficos anteriores, es posible activar y desactivar capas en los gráficos.
 
 Informe de métricas
 ======================
-La tercera pestaña en la ventana emergente es el informe de métricas. El informe de métricas tiene una lista de
-métricas predeterminadas, pero los usuarios pueden agregar métricas adicionales de las disponibles en el paquete
-HydroStats. La interfaz proporciona métricas de error que pueden cuantificar la comparación y la evaluación de
-la mejora entre la simulación histórica corregida por sesgo y la simulación histórica original de acuerdo con las
-diversas métricas de error.
+La tercera pestaña en la ventana emergente es el informe de métricas.
+
+.. image:: _static/imgs/nwlf/reporte_metricas.png
+
+El informe de métricas tiene una lista de métricas predeterminadas, pero los usuarios pueden agregar métricas adicionales de las disponibles en el paquete
+HydroStats.
+
+.. image:: _static/imgs/nwlf/add_metrics.png
 
 Pronóstico
 ===============
 
-La pestaña muestra el pronóstico original y el pronóstico corregido por sesgo en los gráficos superior e inferior,
-respectivamente. El gráfico superior muestra el pronóstico original antes de la corrección del sesgo, los umbrales de
-los períodos de retorno calculados a partir de la simulación histórica. El gráfico de pronóstico inferior muestra el
-pronóstico corregido sesgado, con umbrales de períodos de retorno calculados a partir de la simulación histórica corregida
-por sesgo. Los dos gráficos de pronósticos provienen de 51 simulaciones diferentes, muestran los percentiles de caudal
-25 y 75, caudales máximo y mínimo y un pronóstico de alta resolución. La leyenda desplegada en la derecha muestra las
-diferentes capas se pueden activar y desactivar de los periodos de retorno calculados para la simulación histórica y la
-simulación histórica corregida por sesgo. Los datos de cada período de tiempo aparecen al pasar el cursor sobre el gráfico.
-Los datos pueden ser descargados desde la pestaña final.
+La pestaña muestra el pronóstico corregido por sesgo con umbrales de períodos de retorno calculados a partir de la
+simulación histórica corregida por sesgo. El gráfico de pronóstico proviene de 51 simulaciones diferentes más un
+miembro de alta resolución, muestran los percentiles de caudal 25 y 75, caudales máximo y mínimo y un pronóstico de alta
+resolución.
 
+.. image:: _static/imgs/nwlf/pronostico.png
 
+La leyenda desplegada en la derecha muestra las diferentes capas se pueden activar y desactivar de los
+periodos de retorno calculados para la simulación histórica y la simulación histórica corregida por sesgo.
+Los datos de cada período de tiempo aparecen al pasar el cursor sobre el gráfico. Los datos pueden ser descargados
+desde la pestaña final.
+También puede seleccionar el pronóstico de una fecha pasada al hacer clic en el calendario y seleccionar la fecha de
+interés:
+
+.. image:: _static/imgs/nwlf/pronostico_calendario.png
 
 
 
